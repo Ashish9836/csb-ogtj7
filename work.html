@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="work.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href='https://css.gg/add.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <style>body{
+    background-image:url('https://wallpaperaccess.com/full/1567666.png')
+  }
+  .card-text{
+    font-size: 22px;
+  }</style>
+<div style="display: flex; justify-content:space-evenly; flex-wrap: wrap; background-color: rgb(49, 48, 48);">
+<input type="text" name="" id="inp-add" style="padding-right: 10vw;background-color: rgb(39, 37, 37); border:rgb(245, 218, 183) 3px solid;color:white; font-size: 20px; padding-left: 10vw;margin:10px;outline: none;border-radius:1em;"   placeholder='Tell me about your tasks' >
+<button style="margin:10px;outline: none; border:2px solid white" onclick='addFunction()' >Add this task</button>
+</div>
+
+
+<div style="display:flex;flex-wrap: wrap; text-align:center">
+
+
+<div class="card" style="width: 18rem;" id="car-1">
+    <div class="card-body">
+      
+      <h5 class="card-subtitle mb-2 text-muted">Task-1</h5>
+      <p class="card-text" id="t-1">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <!-- <div style="display:flex;flex-wrap: wrap;justify-content: space-evenly;"> -->
+        <div style="display:flex;flex-wrap: wrap;justify-content: space-evenly;">
+          <div onclick="done('t-1')"  ><img src="/verified.svg" alt="" width="40" height="40"></div>
+          <div onclick='delTask("car-1","t-1")'><img src="/delete (1).svg" alt="" width="40" height="40"></div>
+          </div>
+      </div>
+      
+    </div>
+      
+  
+
+
+
+
+
+
+  <div class="card" style="width: 18rem;" id="car-2">
+    <div class="card-body">
+    
+      <h5 class="card-subtitle mb-2 text-muted">Task-2</h5>
+      <p class="card-text" id="t-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+      <!-- <div style="display:flex;flex-wrap: wrap;justify-content: space-evenly;"> -->
+        <div style="display:flex;flex-wrap: wrap;justify-content: space-evenly;">
+          <div onclick="done('t-2')" ><img src="/verified.svg" alt="" width="40" height="40"></div>
+          <div onclick='delTask("car-2","t-2")'><img src="/delete (1).svg" alt="" width="40" height="40"></div>
+          </div>
+      
+      
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="card" style="width: 18rem;" id="car-3">
+    <div class="card-body">
+     
+      <h5 class="card-subtitle mb-2 text-muted">Task-3</h5>
+      <p class="card-text" id="t-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <!-- <div style="display:flex;flex-wrap: wrap;justify-content: space-evenly;"> -->
+        <div style="display:flex;flex-wrap: wrap;justify-content: space-evenly;">
+          <div onclick="done('t-3')"  ><img src="/verified.svg" alt="" width="40" height="40"></div>
+          <div onclick='delTask("car-3","t-3")'><img src="/delete (1).svg" alt="" width="40" height="40"></div>
+          </div>
+      </div>
+      
+    </div>
+   
+   
+
+
+
+
+
+
+  <div class="card" style="width: 18rem;" id="car-4">
+    <div class="card-body">
+     
+      <h5 class="card-subtitle mb-2 text-muted">Task-4</h5>
+      <p class="card-text" id="t-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <div style="display:flex;flex-wrap: wrap;justify-content: space-evenly;">
+        <div onclick="done('t-4')"  ><img src="/verified.svg" alt="" width="40" height="40"></div>
+        <div onclick='delTask("car-4","t-4")'><img src="/delete (1).svg" alt="" width="40" height="40"></div>
+        </div>
+      
+      
+    </div>
+    </div>
+  
+
+
+
+
+
+
+
+  <div class="card" style="width: 18rem;" id="car-5">
+    <div class="card-body">
+      
+      <h5 class="card-subtitle mb-2 text-muted">Task-5</h5>
+      <p class="card-text" id="t-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <!-- <div style="display:flex;flex-wrap: wrap;justify-content: space-evenly;"> -->
+        <div style="display:flex;flex-wrap: wrap;justify-content: space-evenly;">
+          <div onclick="done('t-5')"  ><img src="/verified.svg" alt="" width="40" height="40"></div>
+          <div onclick='delTask("car-5","t-5")'><img src="/delete (1).svg" alt="" width="40" height="40"></div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+
+
+ 
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="work.js"></script>
+</body>
+</html>

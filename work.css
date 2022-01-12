@@ -1,0 +1,51 @@
+button{
+    margin: 20px;
+    text-align: center;
+    background: #e6005c;
+    color:#fff;
+    border-radius: 2em;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.6em;
+    font-family: gilroy-bold;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+  }
+  button:hover{
+    background:black;
+    border-radius: 2em;
+    color:white;
+  }
+  button:before,button:after{
+    content:'';
+    position:absolute;
+    border-radius: 2em;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    /* background-color: white; */
+    transition:400ms ease all;
+  }
+  button:after{
+    right:inherit;
+    top:inherit;
+    border-radius: 2em;
+    left:0;
+    bottom:0;
+  }
+  button:hover:before,button:hover:after{
+    width:100%;
+    border-radius: 2em;
+    transition:800ms ease all;
+  }
+  
+
+  /* for lists */
+  
+.card{
+  margin:40px;
+ }
